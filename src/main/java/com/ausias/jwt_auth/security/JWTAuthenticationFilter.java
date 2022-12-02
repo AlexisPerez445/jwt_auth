@@ -21,10 +21,10 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public Authentication attempAuthentication(HttpServletRequest request, HttpServletResponse response)
             throws AuthenticationException {
 
-        AuthCredentials oAuthCredentials = new AuthCredentials();
-
+                AuthCredentials oAuthCredentials = new AuthCredentials();
+     
         try {
-            oAuthCredentials = new ObjectMapper().readValue(request.getReader(), AuthCredentials.class);
+              oAuthCredentials = new ObjectMapper().readValue(request.getReader(), AuthCredentials.class);
 
         } catch (IOException e) {
 
