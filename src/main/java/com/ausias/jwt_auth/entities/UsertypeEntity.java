@@ -21,7 +21,7 @@ public class UsertypeEntity {
     private String name;
 
     @OneToMany(mappedBy = "usertype", fetch = FetchType.LAZY)
-    private final List<UsertypeEntity> users;
+    private final List<UserEntity> users;
 
     public UsertypeEntity() {
         this.users = new ArrayList<>();
